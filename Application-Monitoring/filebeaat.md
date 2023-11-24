@@ -1,12 +1,16 @@
----
-video number - 23
----
-this configures installation of front-end after installation
+                                                              ---
+                                                              video number - 23
+                                                              ---
+:::info
+this configures installation of front-end after installation.
+:::
 -------------------------------------------------------------
+# 03 - Filebeat
+
 Setup the elastic repo file
 
 :::tip Hint
-Hint! You can create file by using **`vim /etc/yum.repos.d/elastic.repo`**
+Hint! You can create file by using **```vim /etc/yum.repos.d/elastic.repo```**
 :::
 
 ``` shell title=/etc/yum.repos.d/elastic.repo
