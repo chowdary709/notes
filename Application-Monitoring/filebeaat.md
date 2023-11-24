@@ -23,34 +23,31 @@ type=rpm-md
 ```
 18.207.116.11 | 172.31.21.138 | t2.micro | null
 [ root@frontend ~ ]# vim /etc/filebeat/filebeat.yml
-```
 
-
-```
 
 ######################{ line no - 28 }################################
   # Change to true to enable this input configuration.
   enabled: true
 ######################################################################
-```
-```
+
+
 ######################{ line no - 32 }################################
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
       - /var/log/nginx/access.log
     #- c:\programdata\elasticsearch\logs\*
 ######################################################################
-```
-```
+
+
 ######################{ line no - 139 }################################
-> add # 
+> add #  to all 
 # ---------------------------- Elasticsearch Output -----------------------
 #output.elasticsearch:
   # Array of hosts to connect to.
   #hosts: ["localhost:9200"]
 ######################################################################
-```
-```
+
+
 ######################{ line no - 152 }################################
  ------------------------------ Logstash Output -----------------------------
 output.logstash:
