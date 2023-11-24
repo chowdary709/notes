@@ -78,9 +78,6 @@ systemctl enable filebeat
 systemctl start filebeat 
 ```
 
-:::info
-f
-:::
 
 
 
