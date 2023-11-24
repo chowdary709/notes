@@ -1,10 +1,15 @@
+---
+video number - 23
+---
+this configures installation of front-end after installation
+-------------------------------------------------------------
+Setup the elastic repo file
 
+:::tip Hint
+Hint! You can create file by using **`vim /etc/yum.repos.d/elastic.repo`**
+:::
 
-```
-18.207.116.11 | 172.31.21.138 | t2.micro | null
-[ root@frontend ~ ]# vim /etc/yum.repos.d/elastic.repo
-
-
+``` shell title=/etc/yum.repos.d/elastic.repo
 [elasticsearch]
 name=Elasticsearch repository for 8.x packages
 baseurl=https://artifacts.elastic.co/packages/8.x/yum
@@ -13,34 +18,43 @@ gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 autorefresh=1
 type=rpm-md
-
-
-
-18.207.116.11 | 172.31.21.138 | t2.micro | null
-[ root@frontend ~ ]# yum install filebeat -y
 ```
 
+
+
+Install filebeat
+```shell
+yum install filebeat -y 
 ```
-18.207.116.11 | 172.31.21.138 | t2.micro | null
-[ root@frontend ~ ]# vim /etc/filebeat/filebeat.yml
 
 
+
+Configuration
+```shell
+ vim /etc/filebeat/filebeat.yml
+```
+```shell
 ######################{ line no - 28 }################################
+> default < enabled: false >
+----------------------------------------------------------------------
   # Change to true to enable this input configuration.
   enabled: true
 ######################################################################
 
 
 ######################{ line no - 32 }################################
+> default < /var/log/*.log >
+-----------------------------------------------------------------------
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-      - /var/log/nginx/access.log
+      - /var/log/filebeat/access.log
     #- c:\programdata\elasticsearch\logs\*
 ######################################################################
 
 
 ######################{ line no - 139 }################################
-> add #  to all 
+> default without # of arguments 
+> to add '#' of arguments  
 # ---------------------------- Elasticsearch Output -----------------------
 #output.elasticsearch:
   # Array of hosts to connect to.
@@ -49,12 +63,25 @@ type=rpm-md
 
 
 ######################{ line no - 152 }################################
+> default localhost, changed  to elk private ip address and ermove #
  ------------------------------ Logstash Output -----------------------------
 output.logstash:
   # The Logstash hosts
   hosts: ["172.31.78.110:5044"]
 ######################################################################
 ```
+
+
+Start & Enable filebeat service
+```shell
+systemctl enable filebeat 
+systemctl start filebeat 
+```
+
+:::info
+f
+:::
+
 
 
 
