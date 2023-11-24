@@ -1,11 +1,7 @@
-                                                              ---
-                                                              video number - 23
-                                                              ---
-:::info
-this configures installation of front-end after installation.
-:::
--------------------------------------------------------------
 # 03 - Filebeat
+
+this configures installation of front-end after installation.
+-------------------------------------------------------------
 
 Setup the elastic repo file
 
