@@ -47,6 +47,7 @@ Improving your spelling in English writing takes practice and attention to detai
     - There are various educational games and apps designed to improve spelling. Explore them for an interactive and engaging learning experience.
 
 Improving spelling is a gradual process, so be patient with yourself. Consistent practice and attention to detail will contribute to steady improvement over time.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Improving your spelling in English is a gradual process that involves practice, awareness, and consistency. Here are some tips to help you improve your spelling:
 
@@ -120,4 +121,5 @@ If you're finding that you consistently make around 8 mistakes in a minimum of 1
     - Keep a positive mindset. Recognize that improvement takes time, and every mistake is an opportunity to learn and grow as a writer.
 
 By incorporating these strategies into your writing routine, you can gradually reduce the number of mistakes and enhance the overall quality of your writing. Consistency and a commitment to improvement will yield positive results over time.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
